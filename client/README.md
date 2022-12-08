@@ -2,7 +2,12 @@
 
 In this project, I developed a simple ToDo CRUD React app using AWS Lambda and Serverless Framework. The app also uses Auth0 for authentication and authorization. DynamoDB is used as the database.
 
+## Frontend
+React app is developed using `create-react-app` and `Typescript`. `Auth0` is used for authentication and authorization and allows for login using Google accounts.
+
+![Welcome page before login](
 ## Backend
+
 The backend entails:
 
 - A custom authorizer for API gateway (`Auth0 JWT`)
@@ -12,9 +17,9 @@ The backend entails:
 - `DynamoDB` table for storing `ToDo` items.
 
 ### Best Practices Included
+
 - Validation of incoming HTTP requests using the `serverless-reqvalidator-plugin`.
 - Generation of application-level `metrics` for monitoring.
 - `Logging` of application-level events with a `Winston` logger for JSON-formatted logs.
 - `Distributed tracing` using `AWS X-Ray`.
 - A `Postman` collection for testing the API is included.
-
