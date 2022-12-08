@@ -5,7 +5,18 @@ In this project, I developed a simple ToDo CRUD React app using AWS Lambda and S
 ## Frontend
 React app is developed using `create-react-app` and `Typescript`. `Auth0` is used for authentication and authorization and allows for login using Google accounts.
 
-![Welcome page before login](
+Welcome page before login:
+
+![Welcome page before login](https://github.com/WafulaLukorito/Revised-Develop-and-Deploy-Web-Application-using-AWS-Lambda-and-Serverless-Framework/blob/master/Screenshots/Welcome%20page%20before%20login.png?raw=true "Welcome page before login")
+
+Auth0 authorisation page and prompt for login using Google account:
+
+![Auth0 authorisation page and prompt for login using Google account](https://github.com/WafulaLukorito/Revised-Develop-and-Deploy-Web-Application-using-AWS-Lambda-and-Serverless-Framework/blob/master/Screenshots/AuthO%20login%20Authorization%20and%20prompt.png?raw=true "Auth0 authorisation page and prompt for login using Google account")
+
+App running successfully:
+
+![App running successfully](https://github.com/WafulaLukorito/Revised-Develop-and-Deploy-Web-Application-using-AWS-Lambda-and-Serverless-Framework/blob/master/Screenshots/App%20running%20successfully%20.png?raw=true "App running successfully")
+
 ## Backend
 
 The backend entails:
