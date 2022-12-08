@@ -1,41 +1,25 @@
-# Getting Started
+# Develop and Deploy React App Using AWS Lambda and Serverless Framework
 
+In this project, I developed a simple ToDo CRUD React app using AWS Lambda and Serverless Framework. The app also uses Auth0 for authentication and authorization. DynamoDB is used as the database.
 
+## Frontend
+React app is developed using `create-react-app` and `Typescript`. `Auth0` is used for authentication and authorization and allows for login using Google accounts.
 
+![Welcome page before login](
+## Backend
 
+The backend entails:
 
-# Deploy Backend 
+- A custom authorizer for API gateway (`Auth0 JWT`)
+- `IamRoleStatements` configured for CRUD operations on `DynamoDB`
+- A presigned URL for uploading attachment files to `S3 bucket`.
+- `CORS configuration` for the API gateway functions.
+- `DynamoDB` table for storing `ToDo` items.
 
-            cd backend
+### Best Practices Included
 
-            npm install
-
-            npm install --save-dev serverless-iam-roles-per-function@next 
-
-            serverless
-
-            serverless deploy --verbose
-
-# Deploy Frontend
-
-            cd client
-            
-            npm install
-
-            npm run start
-
-
-The client folder contains a web application that can use the API that should be developed in the project.
-
-To use it please edit the config.ts file in the client folder:
-
-
-                const apiId = '...' API Gateway id
-                export const apiEndpoint = `https://${apiId}.execute-api.us-east-1.amazonaws.com/dev`
-
-                export const authConfig = {
-                domain: '...',    // Domain from Auth0
-                clientId: '...',  // Client id from an Auth0 application
-                callbackUrl: 'http://localhost:3000/callback'
-                }
-
+- Validation of incoming HTTP requests using the `serverless-reqvalidator-plugin`.
+- Generation of application-level `metrics` for monitoring.
+- `Logging` of application-level events with a `Winston` logger for JSON-formatted logs.
+- `Distributed tracing` using `AWS X-Ray`.
+- A `Postman` collection for testing the API is included.
