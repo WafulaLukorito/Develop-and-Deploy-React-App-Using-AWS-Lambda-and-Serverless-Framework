@@ -34,3 +34,5 @@ The backend entails:
 - `Logging` of application-level events with a `Winston` logger for JSON-formatted logs.
 - `Distributed tracing` using `AWS X-Ray`.
 - A `Postman` collection for testing the API is included.
+
+***Deployment instructions included in `Deployment.md` if you would like to try out the app***
